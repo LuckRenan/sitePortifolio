@@ -1,0 +1,1014 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*ROLAGEM SUAVE*/
+html{
+  scroll-behavior: smooth;
+}
+
+body.fundo_principal{
+  background-color: #171717 ;
+  max-width: 100%;
+  width: 1920;
+
+}
+
+#gradeado{
+ background-image: url(../img/g2.png);
+ background-repeat: no-repeat;
+ background-position: center;
+  
+}
+
+
+
+.container{
+  max-width: 100%;
+  width: 1200px;
+  margin:0 auto;
+}
+
+/*Header*/
+
+header.barra_header{
+  max-width: 100%;
+  width: 1920px;
+  height: 100px;
+  background-color: #171717;
+  box-shadow: 0px 3px 6px;
+ 
+}
+
+
+
+.container div img{
+  max-width: 100%;
+  width: 70%;
+  padding-top: 25px;
+
+}
+
+.display_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Titillium Web', sans-serif
+  
+}
+
+nav ul li a:hover{
+ color:#FFCC03;
+
+}
+
+
+nav ul li{
+  list-style: none;
+  margin: 0 15px;
+  padding-top: 28px;
+ 
+  
+  
+}
+
+nav ul{
+   display: flex;
+   margin: 0 15px;
+   
+}
+
+/*Menu mobile*/
+
+.menu_mobile{
+  margin-top: 23px;
+  display: none;
+}
+
+.barras_menu{
+  cursor: pointer;
+}
+ 
+.barra1{
+  width: 30px;
+  height: 5px;
+  background-color: #FFCC03;
+}
+
+.barra2{
+  margin-top: 4px;
+  width: 15px;
+  height: 5px;
+  background-color: #FFCC03;
+}
+
+.barra3{
+  margin-top: 4px;
+  width: 30px;
+  height: 5px;
+  background-color: #FFCC03;
+}
+
+
+
+
+nav.nav_mobile{
+  display: none;
+}
+
+nav li{
+  list-style: none;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Titillium Web', sans-serif
+}
+
+nav a:hover{
+  color: white;
+}
+
+
+/*fim menu mobile*/
+
+/*cabeçalho*/
+
+.fundo_cabecalho{
+  max-width: 100%;
+  background-color: #171717;
+  width: 1920px;
+ /* -webkit-box-shadow: 3px 14px 15px 5px #000000;*/ 
+  box-shadow: 3px 14px 15px 5px #000000;
+
+
+  
+}
+
+div.header_img img{
+  display: block;
+  margin: 0 auto;
+  padding-top: 70px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.header_conteudo h1{
+  color: white;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 80px;
+  font-weight: normal;
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.header_conteudo h4{
+   color:#FFCC03;
+   text-align: center;
+   font-size: 25px;
+   font-family: 'Titillium Web', sans-serif;
+   font-weight: normal;
+   line-height: 5px;
+   opacity: 0;
+   transition: 1.5s;
+
+
+}
+
+.header_conteudo p{
+  padding: 30px;
+  color:white;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  opacity: 0;
+  transition: 2.0s;
+
+ 
+  
+}
+
+div.element_redondo{
+  display: block;
+  margin: 0px auto;
+  max-width: 100px;
+  width: 70px;
+  height: 70px;
+  border: solid 3px white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+  
+}
+
+div.element_redondo:hover{
+  background-color: white;
+  color:#171717;
+
+}
+
+div.element_redondo p a{
+  text-decoration: none;
+  color:white
+
+}
+
+div.element_redondo p a:hover{
+  color:#171717;
+
+}
+
+
+
+.element_redondo p{
+  text-align: center; 
+  margin:8px auto;
+  color:white;
+  font-size: 40px;
+  font-weight: bold;
+  transform: rotate(90deg);
+  
+}
+
+.element_redondo p:hover{
+  color:#171717;
+
+}
+
+.espacinho{
+  height: 20px;
+}
+
+
+
+/*/*shapes*/
+
+div.shape img{
+  position:absolute;
+  margin-left: 50px;
+  top: 150px;
+  animation-name:animacaoShapes;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes animacaoShapes{
+
+  0%{
+     width:4%;
+  }
+
+  50%{
+    width: 6%;
+  }
+
+  100%{
+    width:4%;
+ }
+
+
+}
+
+div.shape2 img{
+  position:absolute;
+  margin-left: 300px;
+  top: 480px;
+  max-width: 4%;
+  animation-name:animacaoShapes2;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animacaoShapes2{
+  from{
+    transform: rotate(0deg);
+  }
+
+  to{
+    transform: rotate(180deg);
+  }
+
+
+}
+
+div.shape3 img{
+  position:absolute;
+  margin-left: 1100px;
+  top: 300px;
+  animation-name:animacaoShapes3;
+  animation-duration: 5s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+
+
+}
+
+@keyframes animacaoShapes3{
+  0%{
+    width:6%;
+ }
+
+ 50%{
+   width: 4%;
+ }
+
+ 100%{
+   width:6%;
+}
+}
+
+div.shape4 img{
+  position:absolute;
+  margin-left: 1250px;
+  top: 200px;
+  width: 3%;
+  animation-name:animacaoShapes4;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes animacaoShapes4{
+  from{
+    transform: rotate(0deg);
+  }
+
+  to{
+    transform: rotate(-180deg);
+  }
+
+
+}
+
+/*fim chapes*/
+
+
+
+/*barra*/
+
+::-webkit-scrollbar{
+  width: 10px;
+  
+}
+
+::-webkit-scrollbar-track{
+   background-color: black;
+}
+
+::-webkit-scrollbar-button{
+  background-color: white;
+  
+
+
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #FFCC03;
+  border-radius: 20px;
+
+
+}
+
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: #FFCC03;
+  border-radius: 20px;
+
+
+}
+
+/*Fim barra*/
+
+/*QUEM SOMOS*/
+
+div.fundo_quem_somos{
+  margin-top: 100px;
+  background-color:#171717;
+  max-width: 100%;
+  width: 1814px;
+  height: 500px;
+  -webkit-box-shadow: -1px 10px 10px 5px #000000; 
+  box-shadow: -1px 10px 20px 5px #000000;
+
+}
+
+div.fundo_quem_somos h1{
+  text-align: center;
+  color:#FFCC03;
+  font-family: 'Anton', sans-serif;
+  font-weight: normal;
+  font-size: 50px;
+  padding-top: 150px;
+
+}
+
+div.fundo_quem_somos p{
+  padding-top: 25px;
+  color:white;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  padding: 30px 200px 0px 200px;
+
+}
+
+
+.titulo_sessao{
+  color:white;
+  font-family: 'Titillium Web', sans-serif;
+  font-size:25px;
+  font-weight: 900;
+  margin-left: 40px;
+  position: absolute;
+  top: 900px;
+  transform: rotate(-90deg);
+}
+
+
+div.detalhe_titulo img{
+  max-width: 100%;
+  width: 0.4%;
+  margin-left: 100px;
+  position: absolute;
+  top: 855px;
+
+}
+
+/*FIM QUEM SOMOS*/
+
+
+/*Portifólio*/
+
+.portifolio_fundo{
+  margin-top: 150px;
+  margin-bottom: 50px;
+  max-width: 100%;
+  width: 1920px;
+  padding-bottom: 50px;
+  background-color: #171717;
+  -webkit-box-shadow: -1px 10px 10px 5px #000000; 
+  box-shadow: -1px 10px 20px 5px #000000;
+}
+
+div.portifolio_fundo h1{
+  text-align: center;
+  color:#FFCC03;
+  font-family: 'Anton', sans-serif;
+  font-weight: normal;
+  font-size: 50px;
+  padding-top: 50px; 
+
+}
+
+div.portifolio_fundo p{
+
+  padding-top: 25px;
+  color:white;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  
+
+}
+
+/*lista de portifólio*/
+
+.container2{
+  max-width: 100%;
+  width: 900px;
+  margin: 10px auto;
+
+}
+
+
+
+.fundo_cont{  
+    max-width: 100%;
+    width: 250px;
+    height: 300px;
+    background-color: #171717;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 30px 30px 30px;
+    margin: 20px;
+    border-radius: 10px;
+
+}
+
+.fundo_cont:hover{
+  border: solid 2px #FFCC03;
+}  
+
+.titulo_sessao2{
+  color:white;
+  font-family: 'Titillium Web', sans-serif;
+  font-size:25px;
+  font-weight: 900;
+  margin-left: 87px;
+  position: absolute;
+  top: 1660px;
+  transform: rotate(-90deg);  
+
+}
+
+div.detalhe_titulo2 img{
+  max-width: 100%;
+  width: 0.4%;
+  margin-left: 178px;
+  position: absolute;
+  top: 1645px;
+
+}
+
+.efeito_flex{
+display: flex;
+flex-wrap: wrap;
+}
+
+.fundo_cont h4{
+  margin-top: 100px;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  color: #FFCC03;
+  font-size: 23px;
+}
+
+/*Sills*/
+
+
+div.fundo_skills{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  background-color:#171717;
+  padding-bottom: 50px;
+  max-width: 100%;
+  width: 1814px;
+  -webkit-box-shadow: -1px 10px 10px 5px #000000; 
+  box-shadow: -1px 10px 20px 5px #000000;
+}
+
+div.fundo_skills h1{
+  text-align: center;
+  color:#FFCC03;
+  font-family: 'Anton', sans-serif;
+  font-weight: normal;
+  font-size: 50px;
+  padding-top: 50px; 
+}
+
+div.fundo_skills p.text{
+  padding-top: 25px;
+  color:white;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  padding: 20px 200px 0px 200px;
+
+
+}
+
+.container3{
+  max-width: 100%;
+  width: 800px;
+  margin: 60px auto;
+
+
+}
+
+div.container3 h2{
+  color:#FFCC03;
+  font-family: 'Titillium Web', sans-serif;
+
+}
+
+.cs{
+  max-width: 100%;
+  width: 110px;
+  height:120px;
+  background-color:#171717; 
+  box-shadow: 30px 30px 30px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.cs:hover{
+  background-color: #FFCC03;
+  border: solid 2px #FFCC03;
+
+
+}
+
+
+div.cs img{
+  max-width: 100%;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+div.cs p{
+  padding-top: 5px;
+  color: white;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+
+}
+
+div.cs p:hover{
+ color:#171717;
+}
+
+
+.cs_display{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.titulo_sessao3{
+  color:white;
+  font-family: 'Titillium Web', sans-serif;
+  font-size:25px;
+  font-weight: 900;
+  margin-left: 32px;
+  position: absolute;
+  top: 2400px;
+  transform: rotate(-90deg);  
+
+}
+
+div.detalhe_titulo3 img{
+  max-width: 100%;
+  width: 0.4%;
+  margin-left: 100px;
+  position: absolute;
+  top: 2355px;
+
+}
+
+/*fim Sills*/
+
+/*Contatos*/
+
+div.bg_contato{
+  max-width: 100%;
+  width: 800px;
+  height: 550px;
+  margin: 40px auto;
+
+}
+
+.bg_contato h1{
+  text-align: center;
+  color:#FFCC03;
+  font-family: 'Anton', sans-serif;
+  font-weight: normal;
+  font-size: 50px;
+  padding-top: 10px; 
+  margin-bottom: 50px; 
+
+}
+
+.txt_contato{
+  color:white;
+  padding:90px;
+  font-family: 'Titillium Web', sans-serif;
+
+}
+
+div.txt_contato span{
+  display: block;
+}
+
+
+.flex_contato{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+
+
+.form_contato span{
+  display: block;
+  color:white;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.form_contato input{
+  border:solid 2px #FFCC03;
+  background-color: #171717;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  width: 350px;
+  height: 35px;
+  color:white
+}
+
+.form_contato textarea{
+  border:solid 2px #FFCC03;
+  background-color: #171717;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  width: 350px;
+  height: 150px;
+  color:white
+
+}
+
+.form_contato button{
+  border:solid 2px #818181;
+  background-color: #171717;
+  color:white;
+  border-radius: 8px;
+  margin: 0 auto;
+  width: 100px;
+  height: 35px;
+  display: block;
+  cursor:pointer;
+  transition: 0.5s
+
+}
+
+.form_contato button:hover{
+  background-color: white;
+  color:#171717;
+  border:none;
+
+}
+
+/*fim contatos*/
+
+/*footer*/ 
+
+.fundo_footer{
+  max-width: 100%;
+  width: 100%;
+  height: 180px;
+  background-color: #FFCC03;
+}
+
+.img_sociais img{
+  margin-top: 60px;
+  max-width: 100%;
+  width: 50px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.img_sociais p{
+  color: #171717;
+  font-family: 'Titillium Web', sans-serif
+
+}
+
+/*Fim footer*/
+
+/*Media query mobile*/
+
+@media screen and (max-width: 768px){
+
+  /*cabeçalho*/
+  .header_conteudo h1{
+    margin:05px;
+    font-size: 70px;
+    margin-bottom: 20px;
+ 
+  }
+
+  div.header_img img{
+    width:70%;
+    
+  }
+
+  /* Shapes*/
+  div.shape img{
+    display: none;
+  }
+
+  div.shape2 img{
+    display: none;
+  }
+  div.shape3 img{
+    display: none;
+  }
+
+  div.shape4 img{
+    display: none;
+  }
+  /*fim shapes*/
+
+  /*#gradeado{
+    background-size: 0px;
+   }*/
+
+   /*quem somos*/
+
+   .titulo_sessao{
+    color:white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:25px;
+    font-weight: 900;
+    margin-left: 42%;
+    position: absolute;
+    top: 865px;
+    transform: rotate(0deg);
+  }
+
+  div.detalhe_titulo img{
+    display: none;
+  
+  }
+
+  div.fundo_quem_somos h1{
+    padding-top: 120px;
+  }
+
+ 
+
+  div.fundo_quem_somos p{
+    padding: 20px;
+    color:white;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+  
+  }
+
+  /* fim quem somos*/
+
+  /*portifólio*/
+
+  div.portifolio_fundo p{
+    padding: 20px;
+  }
+
+  .fundo_cont{  
+    margin: 20px auto;
+
+}
+
+
+  div.portifolio_fundo h1{
+    padding-top: 100px; 
+
+  }
+
+  .titulo_sessao2{
+    margin-left: 140px;
+    top: 1600px;
+    transform: rotate(0deg);  
+    position:absolute;
+    padding-top: 30px;
+  
+  }
+
+  div.detalhe_titulo2 img{
+    display: none;
+  
+  }
+
+  div.cs p{
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+  
+  }
+
+  .cs_display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /*FIM PORTIFÓLIO*/
+
+  /* SKILLS*/
+
+  div.fundo_skills p.text{
+    padding: 5px;
+  
+  }
+
+  div.container3 h2{
+    color:#FFCC03;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+  
+  }
+
+  div.fundo_skills h1{
+    padding-top: 100px; 
+  }
+
+  .titulo_sessao3{
+    margin-left: 43%;
+    top: 3075px;
+    transform: rotate(0deg);  
+    text-align: center;;
+  
+  }
+  
+  div.detalhe_titulo3 img{
+    display: none;
+
+  }
+
+  /* Fim skills*/
+
+  /*contatos*/
+  
+
+  .txt_contato{
+    padding:0px;
+    
+  }
+
+  div.txt_contato span{
+   display: none;
+  }
+
+  .form_contato{
+    margin: 0 auto; 
+    color:white 
+
+  }
+
+  
+  /*Menu mobile*/
+
+  .menu_mobile{
+    margin: 13px 25px 0px 25px;
+    display: block;
+  }
+
+  .menu_principal{
+    display: none;
+  }
+
+  .container div img{
+    max-width: 100%;
+    width: 70%;
+    padding-top: 25px;
+    margin-left: 20px;
+    
+  
+  }
+
+  .lista{
+    position: absolute;
+    margin: 30px 0px 0px -115px;
+    padding:30px;
+    border-radius: 10px;
+    background-color: black;
+  }
+
+  nav.nav_mobile{
+    display: none;
+    
+  }
+
+  /*OUTRA MEDIA QUERY*/
+
+  @media screen and (max-width: 360px){
+    .titulo_sessao2{
+      margin-left: 120px;
+      top: 1495px;
+      transform: rotate(0deg);  
+    
+    }  
+
+  }
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+ 
+  
+
+
+
+  
+
+}
